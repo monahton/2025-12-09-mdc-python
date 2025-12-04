@@ -3,22 +3,17 @@
 {% include warning-curriculum.html %}
 {% endunless %}
 
-<div id="shell">
-  <h3>The Bash Shell (for Windows users only)</h3>
-  <p>
-    Bash can be accessed using the "Git Bash" program on Windows. <br>
-	Download and install Git for Windows using the following link <a href="https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe">https://gitforwindows.org/</a>. <br> 
-	The link will download an .exe file of the setup to install Git Bash. <br>
-</p>
-  <h4>Video Tutorial</h4>
-<div class="yt-wrapper2">
-    <div class="yt-wrapper">
-        <iframe src="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
-    </div>
+{% include install_instructions/shell.html %}
+
+<br/>
+<div class="alert alert-warning">
+  <h4>Note for Windows Users</h4>
+  <ul>
+    <li>If you have used <strong>Windows Subsystem for Linux ("WSL2")</strong> please open your Ubuntu bash terminal and follow the <strong>Linux</strong> instructions for each of the software packages below.</li>
+    <li>If not, please follow the <strong>Windows</strong> instructions.</li>
+  </ul>
 </div>
 
-<hr class="divider">
-</div>
 
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
